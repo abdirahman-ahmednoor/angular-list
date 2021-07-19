@@ -1,1 +1,8 @@
-<p>goal-detail works!</p>
+<p>{{goal.name}}</p>
+<p>This goal was posted by {{goal.name}} {{goal.completeDate|dateCount}} days</p>
+<p>Author: {{goal.author}}</p>
+<button (click)='upvote()'>like</button>
+<div id="Upvote">Up votes <br>{{goal.upvote}}</div>
+<button (click)='downvote()'>dislike</button>
+<div id="Downvote">Down votes <br>{{goal.downvote}}</div>
+<button (click)='goalDelete(true)' class="bbtn btn-outline-danger">Delete</button>

@@ -1,1 +1,20 @@
-<p>goal-form works!</p>
+<div class="container-fluid">
+    <h2 class="text-center">Post your favourite goals</h2>
+    <hr>
+    <form (ngSubmit)= 'submitGoal()' #goalForm='ngForm'>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" [(ngModel)]='newGoal.name' name="name" #name="ngModel" required>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="descripton">Goals</label>
+            <textarea class="form-control" id="description" [(ngModel)]='newGoal.description' name="description" #goals="ngModel" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="author">Author</label><br>
+            <input type="text" id="submit" id="author" [(ngModel)]='newGoal.author' name="author" #author="ngModel" required>
+        </div><br>
+        <button type="submit" class="btn btn-info">Add Goals</button>
+    </form>
+</div>
