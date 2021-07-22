@@ -10,12 +10,12 @@ export class GoalComponent implements OnInit {
   title = "New Goal"
   
   goals: Goal[] = [
-    new Goal(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son', 'fxc', new Date(2019,9,14),9,0),
-    new Goal(2,'Buy Cookies','I have to buy cookies for the parrot', 'fcx', new Date(2019,6,9),0,0),
-    new Goal(3,'Get new Phone Case','Diana has her birthday coming up soon', 'fcx', new Date(2019,1,12),0,0),
-    new Goal(4,'Get Dog Food','Pupper likes expensive snacks', 'fcx', new Date(2019,11,18),0,0),
+    new Goal(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son', 'Brian', new Date(2019,9,14),9,0),
+    new Goal(2,'Buy Cookies','I have to buy cookies for the parrot', 'Kevin', new Date(2019,6,9),0,0),
+    new Goal(3,'Get new Phone Case','Diana has her birthday coming up soon', 'Peter', new Date(2019,1,12),0,0),
+    new Goal(4,'Get Dog Food','Pupper likes expensive snacks', 'Carlos', new Date(2019,11,18),0,0),
     new Goal(5,'Solve math homework','Damn Math', 'fcx', new Date(2019,2,14),0,0),
-    new Goal(6,'Plot my world domination plan','Cause I am an evil overlord', 'fcx', new Date(2019,3,14),0,0),
+    new Goal(6,'Plot my world domination plan','Cause I am an evil overlord', 'Peter', new Date(2019,3,14),0,0),
   ];
 
 
